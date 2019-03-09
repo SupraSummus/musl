@@ -18,5 +18,6 @@ ssize_t readv(int fd, const struct iovec *iov, int count)
 		ret += r;
 		if (r < iov[i].iov_len) return ret;
 	}
+	return ret;
 #endif
 }
